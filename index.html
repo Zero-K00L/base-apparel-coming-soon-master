@@ -24,9 +24,14 @@
         <p class="main-paragraph">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
       </section>
       <form action="" method="post" class="email-container">
-        <input type="email" name="email" id="email"></textarea>
-        <input type="submit" value="submit">
+        <input required class="email-field" placeholder="Email Address" type="email" name="email" id="email"></textarea>
+        <div class="submit-container">
+          <input class="submit-btn" type="image" src="images/icon-arrow.svg" value="submit" alt="submit">
+        </div>
+        <p class="error-msg hidden">Please provide a valid email</p>
+        <img class="error-img hidden" src="images/icon-error.svg" alt="Error image">
       </form>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -28,13 +28,13 @@ body {
 .main {
     width: 100%;
     max-width: 375px;
-    height: auto;
+    height: 800px;
     margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     border: 1px solid black;
 }
 
@@ -44,17 +44,19 @@ body {
 }
 
 .logo {
-    width: 126px;
-    height: 55px;
+    width: 132px;
+    height: 53px;
     padding-top: 32px;
     padding-left: 32px;
+    position: relative;
+    top: -1px;
 }
 
 .main-img-container {
     width: 100%;
     max-width: 375px;
     height: 250px;
-    margin-bottom: 66px;
+    margin-bottom: 64px;
 }
 
 .main-img {
@@ -68,11 +70,12 @@ body {
 
 .main-header {
     text-transform: uppercase;
-    font-size: 46px;
+    font-size: 40px;
     width: 72%;
-    margin: 0 auto 30px auto;
-    letter-spacing: 8px;
+    margin: 0 auto 16px auto;
+    letter-spacing: 11px;
     color: var(--darkGrayishRed);
+    line-height: 42px;
 }
 
 .header-decoration {
@@ -81,7 +84,72 @@ body {
 }
 
 .main-paragraph {
+    margin-bottom: 33px;
     padding-left: 40px;
     padding-right: 40px;
     color: var(--desaturatedRed);
+    font-size: 14px;
+    line-height: 22px;
+    width: 104%;
+    position: relative;
+    left: -8px;
+}
+
+form {
+
+}
+
+.email-field {
+    width: 311px;
+    height: 48px;
+    display: block;
+    border-radius: 23px;
+    margin-left: 33px;
+    padding-left: 20px;
+    color: var(--desaturatedRed);
+    border: 1px solid var(--desaturatedRed);
+}
+
+.email-field:focus {
+    outline-style: solid;
+    outline-color: var(--softRed);
+}
+
+.submit-container {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    height: 48px;
+    width: 64px;
+    position: relative;
+    left: 279px;
+    top: -48px;
+    border-radius: 23px;
+}
+
+.submit-btn {
+    height: 20px;
+    width: 12px;
+    position: relative;
+    top: 13px;
+    left: 27px;
+}
+
+.error-msg {
+    color: var(--softRed);
+    font-size: 13px;
+    position: relative;
+    left: 53px;
+    top: -51px;
+    display: inline;
+}
+
+.error-img {
+    position: relative;
+    top: -84px;
+    left: 73px;
+}
+
+/* Helper Classes */
+
+.hidden {
+    display: none;
 }

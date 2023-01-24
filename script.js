@@ -1,6 +1,7 @@
 var submitBtn = document.querySelector('.submit-btn');
 var errorMessage = document.querySelector('.error-msg');
 var errorImage = document.querySelector('.error-img');
+
 submitBtn.addEventListener('click', handleFormSubmit);
 
 // Function to check if email is valid

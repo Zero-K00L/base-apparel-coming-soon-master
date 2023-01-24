@@ -22,12 +22,13 @@ html {
 }
 
 body {
-    
+    overflow-x: hidden;
 }
+
 
 .main {
     width: 100%;
-    max-width: 375px;
+    max-width: 767px;
     height: 800px;
     margin: 0 auto;
     position: absolute;
@@ -35,12 +36,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    border: 1px solid black;
+}
+
+.background-container {
+    margin: 0;
+    padding: 0;
 }
 
 .logo-container {
     width: 100%;
-    height: 84px;
+    height: 22.5vw;
 }
 
 .logo {
@@ -50,18 +55,23 @@ body {
     padding-left: 32px;
     position: relative;
     top: -1px;
+    width: 34%;
+    height: 14vw;
 }
 
 .main-img-container {
     width: 100%;
-    max-width: 375px;
-    height: 250px;
+    max-width: 767px;
+    min-height: 250px;
+    height:100%;
     margin-bottom: 64px;
 }
 
 .main-img {
     width: 100%;
     height: 100%;
+    position: relative;
+    left: -1px;
 }
 
 .main-img-desktop {
@@ -165,11 +175,43 @@ form {
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 992px and up) */
+@media only screen and (min-width: 1440px)  {
+
+    body {
+        overflow-x: auto;
+    }
+
     .main {
         max-width: 1440px;
         height: 800px;
+        border: 1px solid black;
+    }
+
+    .main::after {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-size: auto;
+        transform: translate(-50%, -50%); /*to the left and top*/
+        z-index: -1;
+        background: url(images/bg-pattern-desktop.svg);
+    }
+
+    .logo-container {
+        width: 25%;
+        position: relative;
+        left: 130px;
+        top: 34px;
+    }
+
+    .logo {
+        width: 189px;
+        height: 65px;
+        padding-top: 32px;
+        padding-left: 32px;
+        position: relative;
     }
 
     .main-img-container {
@@ -178,7 +220,7 @@ form {
         height: 800px;
         position: relative;
         left: 827px;
-        top: -85px;
+        top: -325px;
     }
 
     .main-img {
@@ -191,6 +233,102 @@ form {
         height: 100%;
     }
 
-    
+    .text-container {
+        display: inline-block;
+        text-align: left;
+        position: relative;
+        top: -956px;
+        width: 57%;
+    }
 
+    .main-header {
+        text-transform: uppercase;
+        font-size: 64px;
+        width: 45%;
+        margin-bottom: 25px;
+        letter-spacing: 17px;
+        color: var(--darkGrayishRed);
+        line-height: 67px;
+        display: inline-block;
+        padding-left: 162px;
+    }
+
+    .last-word {
+        position: relative;
+        top: 4px;
+    }
+    
+    .main-paragraph {
+        margin-bottom: 33px;
+        padding-left: 174px;
+        padding-right: 40px;
+        color: var(--desaturatedRed);
+        width: 79%;
+        position: relative;
+        left: -11px;
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .letter-spacing {
+        position: relative;
+        left: 1.7px;
+    }
+
+    .email-container {
+        display: inline-block;
+        position: relative;
+        top: -816px;
+        left: -696px;
+    }
+
+    .email-field {
+        width: 444px;
+        height: 55px;
+        display: block;
+        border-radius: 38px;
+        margin-left: 33px;
+        padding-left: 31px;
+        color: var(--desaturatedRed);
+        border: 1px solid var(--desaturatedRed);
+        font-size: 16px;
+        padding-top: 3px;
+    }
+
+
+    .submit-btn {
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        height: 55px;
+        width: 99px;
+        position: relative;
+        left: 378px;
+        top: -55px;
+        border-radius: 38px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 10px 17px 1px var(--desaturatedRed);
+    }
+
+    .submit-btn:active {
+        background: pink;
+    }
+
+    .submit-img {
+        height: 20px;
+        width: 12px;
+        position: relative;
+        top: 3px;
+        left: 2px;
+    }
+
+    .error-msg {
+        position: relative;
+        left: -39px;
+    }
+
+    .error-img {
+        position: relative;
+        top: -50px;
+        left: 64px;
+    }
 } 

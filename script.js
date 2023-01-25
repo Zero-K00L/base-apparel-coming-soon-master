@@ -21,6 +21,7 @@ function handleFormSubmit(event) {
     errorImage.classList.remove('hidden');
     errorMessage.classList.add('active');
     errorImage.classList.add('active')
+    document.getElementById("email").focus();
   } else {
     // If email is valid, add the "hidden" class
     errorMessage.classList.remove('active');
@@ -29,6 +30,7 @@ function handleFormSubmit(event) {
     errorImage.classList.add('hidden');
   }
 }
+
 
 
 

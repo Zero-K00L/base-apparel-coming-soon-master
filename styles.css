@@ -136,23 +136,23 @@ body {
     height: 20px;
     width: 12px;
     position: relative;
-    top: 4px;
-    left: 1px;
+    top: -38px;
+    left: 239px;
 }
 
 .error-msg {
     color: var(--softRed);
     font-size: 13px;
     position: relative;
-    left: -12px;
-    top: -14px;
+    left: -30px;
+    top: -5px;
     display: inline;
 }
 
 .error-img {
     position: relative;
-    top: -45px;
-    left: 6px;
+    top: -37px;
+    left: -12px;
 }
 
 /* Helper Classes */
@@ -229,20 +229,20 @@ body {
         height: 20px;
         width: 12px;
         position: relative;
-        top: 3px;
-        left: 2px;
+        top: -44px;
+        left: 321px;
     }
 
     .error-msg {
-        left: -39px;
-        top: -13px;
+        left: -63px;
+        top: -5px;
     }
 
     .error-img {
         position: relative;
-        top: -49px;
-        left: 64px;
-    }     
+        top: -44px;
+        left: 47px;
+    }   
 } 
 
 
@@ -402,20 +402,20 @@ body {
         height: 20px;
         width: 12px;
         position: relative;
-        top: 3px;
-        left: 2px;
+        top: -44px;
+        left: 321px;
     }
 
     .error-msg {
-        left: -39px;
-        top: -13px;
+        left: -63px;
+        top: -5px;
     }
 
     .error-img {
         position: relative;
-        top: -49px;
-        left: 64px;
-    }     
+        top: -44px;
+        left: 47px;
+    }      
 } 
 
 
@@ -571,19 +571,19 @@ body {
         height: 20px;
         width: 12px;
         position: relative;
-        top: 3px;
-        left: 2px;
+        top: -44px;
+        left: 321px;
     }
 
     .error-msg {
-        left: -39px;
-        top: -13px;
+        left: -63px;
+        top: -5px;
     }
 
     .error-img {
         position: relative;
-        top: -49px;
-        left: 64px;
+        top: -44px;
+        left: 47px;
     }     
 }
 
@@ -739,18 +739,18 @@ body {
         height: 20px;
         width: 12px;
         position: relative;
-        top: 3px;
-        left: 2px;
+        top: -44px;
+        left: 321px;
     }
 
     .error-msg {
-        left: -39px;
-        top: -13px;
+        left: -63px;
+        top: -5px;
     }
 
     .error-img {
         position: relative;
-        top: -49px;
-        left: 64px;
+        top: -44px;
+        left: 47px;
     }     
 } 
